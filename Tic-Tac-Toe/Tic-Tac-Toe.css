@@ -1,0 +1,87 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #282c35;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-container {
+  background-color: #353b48;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #fff;
+}
+
+#player-info,
+#symbol-selector-container,
+button {
+  margin-bottom: 10px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+input[type="text"],
+select {
+  width: 200px;
+}
+
+button {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 2em;
+  border: none;
+  cursor: pointer;
+  background-color: #2ecc71;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #27ae60;
+}
+
+.cell:active {
+  background-color: #1f8b4c;
+}
+
+#symbol-selector {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
